@@ -13,6 +13,11 @@
 		39D0C8FE245ADE2E0012AA3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0C8FD245ADE2E0012AA3A /* Assets.xcassets */; };
 		39D0C901245ADE2E0012AA3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39D0C900245ADE2E0012AA3A /* Preview Assets.xcassets */; };
 		39D0C904245ADE2E0012AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D0C902245ADE2E0012AA3A /* LaunchScreen.storyboard */; };
+		39D0C90C245ADE510012AA3A /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C90B245ADE510012AA3A /* Sight.swift */; };
+		39D0C90E245ADEE70012AA3A /* SightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C90D245ADEE70012AA3A /* SightData.swift */; };
+		39D0C910245ADF0B0012AA3A /* SightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C90F245ADF0B0012AA3A /* SightRow.swift */; };
+		39D0C912245AE1F20012AA3A /* SightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C911245AE1F20012AA3A /* SightList.swift */; };
+		39D0C914245AE5A60012AA3A /* SightEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C913245AE5A60012AA3A /* SightEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		39D0C900245ADE2E0012AA3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		39D0C903245ADE2E0012AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39D0C905245ADE2E0012AA3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39D0C90B245ADE510012AA3A /* Sight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
+		39D0C90D245ADEE70012AA3A /* SightData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightData.swift; sourceTree = "<group>"; };
+		39D0C90F245ADF0B0012AA3A /* SightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightRow.swift; sourceTree = "<group>"; };
+		39D0C911245AE1F20012AA3A /* SightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightList.swift; sourceTree = "<group>"; };
+		39D0C913245AE5A60012AA3A /* SightEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,9 @@
 		39D0C8EB245ADE2C0012AA3A = {
 			isa = PBXGroup;
 			children = (
+				39D0C90B245ADE510012AA3A /* Sight.swift */,
+				39D0C90D245ADEE70012AA3A /* SightData.swift */,
+				39D0C90F245ADF0B0012AA3A /* SightRow.swift */,
 				39D0C8F6245ADE2C0012AA3A /* My_forth_iOS_homework */,
 				39D0C8F5245ADE2C0012AA3A /* Products */,
 			);
@@ -59,6 +72,8 @@
 				39D0C8F7245ADE2C0012AA3A /* AppDelegate.swift */,
 				39D0C8F9245ADE2C0012AA3A /* SceneDelegate.swift */,
 				39D0C8FB245ADE2C0012AA3A /* ContentView.swift */,
+				39D0C911245AE1F20012AA3A /* SightList.swift */,
+				39D0C913245AE5A60012AA3A /* SightEditor.swift */,
 				39D0C8FD245ADE2E0012AA3A /* Assets.xcassets */,
 				39D0C902245ADE2E0012AA3A /* LaunchScreen.storyboard */,
 				39D0C905245ADE2E0012AA3A /* Info.plist */,
@@ -146,7 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D0C90E245ADEE70012AA3A /* SightData.swift in Sources */,
 				39D0C8F8245ADE2C0012AA3A /* AppDelegate.swift in Sources */,
+				39D0C914245AE5A60012AA3A /* SightEditor.swift in Sources */,
+				39D0C910245ADF0B0012AA3A /* SightRow.swift in Sources */,
+				39D0C90C245ADE510012AA3A /* Sight.swift in Sources */,
+				39D0C912245AE1F20012AA3A /* SightList.swift in Sources */,
 				39D0C8FA245ADE2C0012AA3A /* SceneDelegate.swift in Sources */,
 				39D0C8FC245ADE2C0012AA3A /* ContentView.swift in Sources */,
 			);
