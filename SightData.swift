@@ -7,8 +7,31 @@
 //
 
 import Foundation
+import Combine
 
 class SightData: ObservableObject {
- @Published var sights = [Sight]()
- var number = 0
+    var cancellable: AnyCancellable?
+    @Published var sights = [Sight]()
+    var number = 0
+    
+    init(){
+        
+        if let data = UserDefaults.standard.data(forKey: "sights") {
+            let decoder = JSONDecoder()
+            if let decodedData = try? decoder.decode([Sight].self, from: data) {
+                sights = decodedData
+            }
+        }
+        
+        cancellable = $sights
+            .sink { (value) in
+                let encoder = JSONEncoder()
+                do {
+                    let data = try encoder.encode(value)
+                    UserDefaults.standard.set(data, forKey: "sights")
+                } catch {
+                    
+                }
+        }
+    }
 }

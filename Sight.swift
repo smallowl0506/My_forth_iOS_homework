@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Sight : Identifiable {
+struct Sight : Identifiable,Codable {
  let id = UUID() 
  var name: String
  var height: Int
