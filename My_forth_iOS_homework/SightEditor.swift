@@ -13,20 +13,20 @@ struct SightEditor: View {
  @Environment(\.presentationMode) var presentationMode
     var sightData: SightData
  @State private var name = ""
- @State private var height = 30
- @State private var like = true
+ @State private var grade = 1
+ @State private var gone = true
     var editSight: Sight?
 
  var body: some View {
     Form {
         TextField("名稱", text: $name)
-        Stepper("高度 \(height)", value: $height, in:
-        30...100)
-         Toggle("我愛", isOn: $like)
+        Stepper("我給的評分是 \(grade)", value: $grade, in:
+        0...5)
+         Toggle("我去過", isOn: $gone)
     }
      .navigationBarTitle("增加新景點")
      .navigationBarItems(trailing: Button("儲存") {
-        let sight = Sight(name: self.name, height: self.height,like: self.like)
+        let sight = Sight(name: self.name, grade: self.grade,gone: self.gone)
         
         if let editSight = self.editSight {
             let index = self.sightData.sights.firstIndex {
@@ -44,8 +44,8 @@ struct SightEditor: View {
         
             if let editSight = self.editSight {
                 self.name = editSight.name
-                self.height = editSight.height
-                self.like = editSight.like
+                self.grade = editSight.grade
+                self.gone = editSight.gone
             }
         }
     }

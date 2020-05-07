@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var sightData = SightData()
     var body: some View {
-        Text("Hello World")
+        VStack{
+            TabView {
+                SightList(sightData: self.sightData)
+                    .tabItem {
+                        Text("編輯名勝")
+                        Image(systemName: "music.house.fill")
+                }
+                Chart(sightData: self.sightData)
+                    .tabItem{
+                    Image(systemName: "chart.pie.fill")
+                    Text("評分圓餅圖")
+                }
+            }
+            .accentColor(.red)
+        }
     }
 }
 

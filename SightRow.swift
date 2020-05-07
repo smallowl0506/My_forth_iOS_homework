@@ -16,8 +16,8 @@ struct SightRow: View {
     HStack {
         Text(sight.name)
             Spacer()
-        Text("\(sight.height) meter")
-        Image(systemName: sight.like ? "heart.fill" :
+        Text("\(sight.grade) 分")
+        Image(systemName: sight.gone ? "heart.fill" :
             "heart")
      }
 

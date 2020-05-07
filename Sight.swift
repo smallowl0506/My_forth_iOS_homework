@@ -11,6 +11,6 @@ import Foundation
 struct Sight : Identifiable,Codable {
  let id = UUID() 
  var name: String
- var height: Int
- var like: Bool
+ var grade: Int
+ var gone: Bool
 }

@@ -18,6 +18,8 @@
 		39D0C910245ADF0B0012AA3A /* SightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C90F245ADF0B0012AA3A /* SightRow.swift */; };
 		39D0C912245AE1F20012AA3A /* SightList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C911245AE1F20012AA3A /* SightList.swift */; };
 		39D0C914245AE5A60012AA3A /* SightEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D0C913245AE5A60012AA3A /* SightEditor.swift */; };
+		49A8B2452464234F007B6BC8 /* chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8B2442464234F007B6BC8 /* chart.swift */; };
+		49A8B247246427E6007B6BC8 /* chartview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A8B246246427E6007B6BC8 /* chartview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		39D0C90F245ADF0B0012AA3A /* SightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightRow.swift; sourceTree = "<group>"; };
 		39D0C911245AE1F20012AA3A /* SightList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightList.swift; sourceTree = "<group>"; };
 		39D0C913245AE5A60012AA3A /* SightEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightEditor.swift; sourceTree = "<group>"; };
+		49A8B2442464234F007B6BC8 /* chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chart.swift; sourceTree = "<group>"; };
+		49A8B246246427E6007B6BC8 /* chartview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				39D0C8F7245ADE2C0012AA3A /* AppDelegate.swift */,
 				39D0C8F9245ADE2C0012AA3A /* SceneDelegate.swift */,
 				39D0C8FB245ADE2C0012AA3A /* ContentView.swift */,
+				49A8B2442464234F007B6BC8 /* chart.swift */,
+				49A8B246246427E6007B6BC8 /* chartview.swift */,
 				39D0C911245AE1F20012AA3A /* SightList.swift */,
 				39D0C913245AE5A60012AA3A /* SightEditor.swift */,
 				39D0C8FD245ADE2E0012AA3A /* Assets.xcassets */,
@@ -164,8 +170,10 @@
 				39D0C90E245ADEE70012AA3A /* SightData.swift in Sources */,
 				39D0C8F8245ADE2C0012AA3A /* AppDelegate.swift in Sources */,
 				39D0C914245AE5A60012AA3A /* SightEditor.swift in Sources */,
+				49A8B247246427E6007B6BC8 /* chartview.swift in Sources */,
 				39D0C910245ADF0B0012AA3A /* SightRow.swift in Sources */,
 				39D0C90C245ADE510012AA3A /* Sight.swift in Sources */,
+				49A8B2452464234F007B6BC8 /* chart.swift in Sources */,
 				39D0C912245AE1F20012AA3A /* SightList.swift in Sources */,
 				39D0C8FA245ADE2C0012AA3A /* SceneDelegate.swift in Sources */,
 				39D0C8FC245ADE2C0012AA3A /* ContentView.swift in Sources */,
