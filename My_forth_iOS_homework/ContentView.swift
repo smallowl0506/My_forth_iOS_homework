@@ -15,13 +15,13 @@ struct ContentView: View {
             TabView {
                 SightList(sightData: self.sightData)
                     .tabItem {
-                        Text("編輯名勝")
+                        Text("編輯名勝列表")
                         Image(systemName: "music.house.fill")
                 }
                 Chart(sightData: self.sightData)
                     .tabItem{
                     Image(systemName: "chart.pie.fill")
-                    Text("評分圓餅圖")
+                    Text("評分統計圖表")
                 }
             }
             .accentColor(.red)

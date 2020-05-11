@@ -155,13 +155,13 @@ struct CountText: View
     var body: some View
     {
         Group {
-            Text("0").offset(x:10, y:170)
-            Text("5").offset(x:10, y:115)
-            Text("10").offset(x:10, y:65)
-            Text("15").offset(x:10, y:15)
-            Text("20").offset(x:10, y:-35)
-            Text("25").offset(x:10, y:-85)
-            Text("30").offset(x:10, y:-135)
+            Text("0個").offset(x:-10, y:170)
+            Text("5個").offset(x:-10, y:115)
+            Text("10個").offset(x:-10, y:65)
+            Text("15個").offset(x:-10, y:15)
+            Text("20個").offset(x:-10, y:-35)
+            Text("25個").offset(x:-10, y:-85)
+            Text("30個").offset(x:-10, y:-135)
         }
         .font(Font.system(size: 25))
     }
@@ -176,7 +176,7 @@ struct BarChart: View {
                 VStack{
                     Text(String(Int(self.scoreCount[index])))
                     Rectangle()
-                        .fill(Color.red)
+                        .fill(Color.orange)
                         .frame(width: 25, height: self.height[index])
                         .animation(.linear(duration: 1))
                         .onAppear
@@ -185,11 +185,12 @@ struct BarChart: View {
                         }
                     Text(String(index))
                         .font(Font.system(size: 25))
-                    Image(systemName: "star.fill")
+                    Image(systemName: "heart.fill")
                         .resizable()
                         .frame(width: 20, height:20)
-                        .foregroundColor(Color.yellow)
+                        .foregroundColor(Color.red)
                         .offset(y:-10)
+                        .opacity(0.5)
                 }
                 .padding(.trailing,10)
                 .offset(x:10, y: 102 + CGFloat(self.scoreCount[index] * -5))

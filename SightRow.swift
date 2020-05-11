@@ -17,8 +17,8 @@ struct SightRow: View {
         Text(sight.name)
             Spacer()
         Text("\(sight.grade) 分")
-        Image(systemName: sight.gone ? "heart.fill" :
-            "heart")
+        Image(systemName: sight.gone ? "star.fill" :
+            "star")
      }
 
  }
